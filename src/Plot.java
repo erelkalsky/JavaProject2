@@ -23,7 +23,8 @@ public class Plot extends Property {
     @Override
     public String toString() {
         return "Plot:" + "\n" +
-                "type: " + type.toString().toLowerCase();
+                "type: " + type.toString().toLowerCase() + "\n" +
+                super.toString();
     }
 
     @Override

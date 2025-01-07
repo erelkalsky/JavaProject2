@@ -34,6 +34,14 @@ public class Commercial extends Property {
         this.yield = yield;
     }
 
+    @Override
+    public String toString() {
+        return "Commercial" + "\n" +
+                "storeroom: " + storeroom + "\n" +
+                "yield: " + yield + "\n" +
+                super.toString();
+    }
+
     public void expectedYield() {
         System.out.println("Expected yield: " + (price * (yield / 100) / 12));
     }
